@@ -4,6 +4,7 @@ version = "0.1.10"
 description = "Poetic tooling for Poetry."
 authors = ["Phillip Sitbon <phillip.sitbon@gmail.com>"]
 readme = "README.md"
+repository = "https://github.com/sitbon/poet"
 
 packages = [
     { include = "poet" }
