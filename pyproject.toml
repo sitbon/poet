@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "poet"
-version = "0.1.4"
-description = ""
+name = "poetry-poet"
+version = "0.1.10"
+description = "Poetic tooling for Poetry."
 authors = ["Phillip Sitbon <phillip.sitbon@gmail.com>"]
 readme = "README.md"
 
@@ -10,13 +10,13 @@ packages = [
 ]
 
 [tool.poetry.plugins."poetry.plugin"]
-demo = "poet.plug.plug:PoetPlugin"
+poet = "poet.plug.plug:PoetPlugin"
 
 [tool.poetry.plugins."poetry.application.plugin"]
-foo-command = "poet.plug.poet:PoetApplicationPlugin"
+poet = "poet.plug.poet:PoetApplicationPlugin"
 
-#[tool.poetry.scripts]
-#poet = "poetry.console.application:main"
+[tool.poetry.scripts]
+poet = "poetry.console.application:main"
 
 [tool.poetry.dependencies]
 python = "^3.7"
